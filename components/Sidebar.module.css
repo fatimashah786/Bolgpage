@@ -1,0 +1,78 @@
+/* AddSidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px; /* Initial width of the sidebar */
+  background-color: #0a0202;
+  padding-top: 3rem;
+  margin-top: 0.5rem;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Show sidebar when open */
+}
+
+.sidebar.closed {
+  transform: translateX(-100%); /* Hide sidebar when closed */
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  margin-top: 2px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid rgb(248, 248, 243);
+}
+
+.close-btn:hover {
+  background-color: red;
+}
+.sidebar-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 1rem;
+}
+
+.sidebar-links span {
+  display: block;
+  padding: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 33px;
+}
+
+.icon {
+  width: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.sidebar-links span:hover {
+  background-color: #a58eb8;
+}
+
+/* AddSidebar.css */
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjust width for smaller screens */
+  }
+
+  .close-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.2rem;
+  }
+}

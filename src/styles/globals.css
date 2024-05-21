@@ -1,0 +1,81 @@
+/* styles/globals.css */
+
+.container {
+  display: block;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  padding-left: 50px;
+}
+
+.menu-toggle {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* styles/globals.css */
+.navbar {
+  height: 60px;
+  background-color: #222;
+  width: 100%;
+}
+
+.nav-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.menu-toggle {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Display the toggle button on small screens */
+  }
+
+  .navbar-links {
+    display: none; /* Hide the navbar links on small screens */
+  }
+}

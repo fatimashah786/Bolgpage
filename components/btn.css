@@ -1,0 +1,11 @@
+/* styles/button.css */
+.logout-button {
+  color: red;
+  background-color: #ffffff;
+  margin-right: -5px;
+}
+
+.logout-icon {
+  color: red;
+  margin-right: 9px;
+}

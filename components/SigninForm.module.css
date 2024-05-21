@@ -1,0 +1,112 @@
+/* components/SigninForm.module.css */
+
+.form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #b1d9ea;
+  border-radius: 5px;
+  padding-left: 40px;
+}
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px; /* Adjust label font size */
+}
+
+.button {
+  width: 40%;
+  padding: 9px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 70px;
+  font-size: 15px;
+  font-weight: bold;
+
+  background-color: #f8faff;
+  color: #000000;
+  border: 1px solid #1f6e15ce;
+}
+
+.button:hover {
+  background-color: #159132;
+  color: #fff;
+}
+
+.error {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+.h3 {
+  font-family: cursive;
+  width: 20%;
+  padding: 4px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 99px;
+  color: #000000;
+  border-bottom: 3px solid #07a5da;
+}
+
+.btn {
+  width: 34%;
+  padding: 9px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 70px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 33px;
+  font-size: 17px;
+  background-color: #f8faff;
+  color: #000000;
+  border: 1px solid #085308;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.btn:hover {
+  background-color: #f9f9f9;
+  color: #fff;
+  font-size: 15px;
+  font-family: sans-serif;
+}
