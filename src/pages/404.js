@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "./404.module.css";
-const Custom404 = () => {
+const pnf = () => {
   const router = useRouter();
 
   useEffect(() => {
@@ -21,4 +21,4 @@ const Custom404 = () => {
   );
 };
 
-export default Custom404;
+export default pnf;

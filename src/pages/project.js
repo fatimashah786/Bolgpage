@@ -3,6 +3,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
+import withAuth from "./withAuth";
 import { ToastContainer, toast } from "react-toastify";
 import {
   getDatabase,
@@ -376,4 +377,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default withAuth(Project);

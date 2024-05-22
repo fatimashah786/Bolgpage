@@ -174,8 +174,11 @@ const SignupForm = () => {
           {isSubmitting ? "Sign Up" : "Sign Up"}
         </button>
         <h3 className={styles.h3}>Or</h3>
-        <div className={styles.btn}>
-          <Link href="/signin">Sign-In</Link>
+
+        <div>
+          <p className={styles.p}>
+            Already have an Account <Link href="/signin">Sign-In</Link>
+          </p>
         </div>
       </form>
     </>

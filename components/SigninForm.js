@@ -54,7 +54,6 @@
 // };
 
 // export default SigninForm;
-
 import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -67,6 +66,8 @@ import styles from "./SigninForm.module.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { storeSigninData, signIn } from "@/redux/action";
+import { useAuth } from "./authContext";
+
 const SigninForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -74,6 +75,7 @@ const SigninForm = () => {
   const [passwordError, setPasswordError] = useState("");
   const dispatch = useDispatch();
   const router = useRouter();
+  const { user } = useAuth();
 
   // Initialize Firebase app
   const firebaseApp = initializeApp(firebaseConfig);
@@ -125,9 +127,7 @@ const SigninForm = () => {
       });
 
       // Redirecting to the student page after successful sign-in
-      setTimeout(() => {
-        router.push("/student");
-      }, 2000);
+      router.push("/student");
     } catch (error) {
       if (
         error.code === "auth/invalid-email" ||
@@ -175,10 +175,12 @@ const SigninForm = () => {
         <button className={styles.button} type="submit">
           Sign In
         </button>
-
         <h3 className={styles.h3}>Or</h3>
-        <div className={styles.btn}>
-          <Link href="/signup">Sign-Up</Link>
+
+        <div>
+          <p className={styles.p}>
+            Don't have an Account <Link href="/signup">Sign-Up</Link>
+          </p>
         </div>
       </form>
     </>

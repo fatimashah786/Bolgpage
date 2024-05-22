@@ -76,3 +76,9 @@
     font-size: 1.2rem;
   }
 }
+
+/* styles/Navbar.module.css */
+.logoutButton {
+  margin-left: auto;
+  margin-right: 15px;
+}

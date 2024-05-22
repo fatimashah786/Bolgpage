@@ -70,7 +70,7 @@
 }
 
 .h3 {
-  font-family: cursive;
+  font-family: sans-serif;
   width: 20%;
   padding: 4px;
   text-align: center;
@@ -109,4 +109,11 @@
   color: #fff;
   font-size: 15px;
   font-family: sans-serif;
+}
+
+.p {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  color: #010103;
+  margin-left: 23px;
 }
